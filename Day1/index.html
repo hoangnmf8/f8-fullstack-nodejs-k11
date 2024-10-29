@@ -1,54 +1,141 @@
 <!DOCTYPE html>
 <html lang="vi">
-	<meta>
+	<head>
+		<meta />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Day 1 - HTML</title>
 	</head>
+
 	<body>
 		<!-- Toàn bộ nội dung của tài liệu -->
-    <h1>Day 1 - Học HTML</h1>
-    <h2>Học cài đặt và sử dụng VS Code</h2>
-    <h2>Khởi tạo file HTML đầu tiên</h2>
-    <h3>Cấu trúc cơ bản của 1 tài liệu HTML</h3>
-    <!-- unordered list -->
-    <ul>
-      <!-- list item -->
-      <li>Doctype</li>
-      <li>html</li>
-      <li>head</li>
-      <li>body</li>
-    </ul>
+		<h1>Day 1 - Học HTML</h1>
+		<h2>Học cài đặt và sử dụng VS Code</h2>
+		<h2>Khởi tạo file HTML đầu tiên</h2>
+		<h3>Cấu trúc cơ bản của 1 tài liệu HTML</h3>
+		<!-- unordered list -->
+		<ul>
+			<!-- list item -->
+			<li>Doctype</li>
+			<li>html</li>
+			<li>head</li>
+			<li>body</li>
+		</ul>
 
-    <!-- ordered list -->
-    <ul>
-      <!-- list item -->
-      <li>Doctype</li>
-      <li>html</li>
-      <li>head</li>
-      <li>body</li>
-    </ul>
-    <h3>Kỹ năng muốn học:</h3>
-    <ol>
-      <!-- Không nên để nội dung lơ lửng ở đây  -->
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>SCSS</li>
-      <li>C#</li>
-      <li>JavaScript</li>
-      <li>Học cách tạo 1 website</li>
-    </ol>
+		<!-- ordered list -->
+		<ul>
+			<!-- list item -->
+			<li>Doctype</li>
+			<li>html</li>
+			<li>head</li>
+			<li>body</li>
+		</ul>
+		<h3>Kỹ năng muốn học:</h3>
+		<ol>
+			<!-- Không nên để nội dung lơ lửng ở đây  -->
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>SCSS</li>
+			<li>C#</li>
+			<li>JavaScript</li>
+			<li>Học cách tạo 1 website</li>
+		</ol>
 
-    <div>Đây là một đoạn văn</div>
-    <!-- Viết đoạn văn trực tiếp trong thẻ div là không phù hợp về ngữ nghĩa -->
-    <!-- p = paragraph -->
-    <p>Đây là một đoạn văn <span>Đây là đoạn văn thứ 2</span></p>
+		<div>Đây là một đoạn văn</div>
+		<!-- Viết đoạn văn trực tiếp trong thẻ div là không phù hợp về ngữ nghĩa -->
+		<!-- p = paragraph -->
+		<p>Đây là một đoạn văn <span>Đây là đoạn văn thứ 2</span></p>
 
-    <!-- span (inline)-->
-    <span>Đây là một đoạn văn</span> <span>Đây là đoạn văn thứ 2</span>
-    <section>
-      
-    </section>
+		<!-- span (inline)-->
+		<span>Đây là một đoạn văn</span> <span>Đây là đoạn văn thứ 2</span>
 
+		<table>
+			<!-- table head -->
+			<thead>
+				<!-- table row -->
+				<tr>
+					<!-- table heading -->
+					<th>Họ và tên</th>
+					<th>Ngày sinh</th>
+					<th>Quê quán</th>
+					<th>Nghề nghiệp</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<!-- table data -->
+					<!-- b = bold -->
+					<td><b>Nguyễn</b> Minh <b>Hoàng</b></td>
+					<td>27/11/1992</td>
+					<td>Bắc Giang</td>
+					<!-- Gạch chân nghề nghiệp -->
+					<td><u>Giảng viên F8</u></td>
+					<!-- in nghiêng email -->
+					<td><i>hoangnm@fullstack.edu.vn</i></td>
+				</tr>
+				<tr>
+					<td>Vũ Huy Đô</td>
+					<td>04/12/2003</td>
+					<td>Thái Bình</td>
+					<td>Đi làm</td>
+					<td>dovh@fulltack.edu.vn</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<form>
+			<label for="email">Email</label>
+			<input type="email" placeholder="Vui lòng nhập email..." id="email" />
+			<label for="password">Password</label>
+			<input type="password" placeholder="Vui lòng nhập password..." />
+			<textarea name="" id="" rows="10" cols="20"></textarea>
+			<button>Register</button>
+		</form>
+
+		<p>button</p>
+		<input type="button" />
+		<p>checkbox</p>
+		<input type="checkbox" />
+		<p>color</p>
+		<input type="color" />
+		<p>date</p>
+		<input type="date" />
+		<p>datetime</p>
+		<input type="datetime-local" />
+		<p>email</p>
+		<input type="email" />
+		<p>file</p>
+		<input type="file" />
+		<p>hidden</p>
+		<input type="hidden" />
+		<p>image</p>
+		<input type="image" />
+		<p>month</p>
+		<input type="month" />
+		<p>number</p>
+		<input type="number" />
+		<p>password</p>
+		<input type="password" />
+		<p>radio</p>
+		<input type="radio" />
+		<p>range</p>
+		<input type="range" />
+		<p>reset</p>
+		<input type="reset" />
+		<p>search</p>
+		<input type="search" />
+		<p>submit</p>
+		<input type="submit" />
+		<p>tel</p>
+		<input type="tel" />
+		<p>text</p>
+		<input type="text" />
+		<p>time</p>
+		<input type="time" />
+		<p>url</p>
+		<input type="url" />
+		<p>week</p>
+		<input type="week" />
 	</body>
 </html>

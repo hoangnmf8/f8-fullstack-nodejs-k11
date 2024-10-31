@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 
+    Xây dựng form đăng ký tài khoản với yêu cầu:
+    Có đầy đủ các trường thông tin: username, email, password, confirm-password, giới tính, nghề nghiệp (đi làm, sinh viên, khác), Câu hỏi khác nếu có?, nút bấm "Đăng ký"
+
+    https://api-gateway.fullstack.edu.vn/action_page.php
+  -->
+
+  <!-- request: POST, GET, PUT (PATCH), DELETE -> CREATE, READ, UPDATE, DELETE -->
+  <form method="POST" id="registerForm"
+  action="https://api-gateway.fullstack.edu.vn/action_page.php">
+    <div>
+      <label for="username">Username</label>
+      <input id="username" type="text" placeholder="Username..." required minlength="6">
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Email..." required>
+    </div>
+
+    <div>
+      <label for="password">password</label>
+      <input id="password" name="password" type="password" placeholder="Password...">
+    </div>
+
+    <div>
+      <label for="confirm-password">Confirm password</label>
+      <input id="confirm-password" name="confirm-password" type="password" placeholder="Confirm password...">
+    </div>
+
+    <textarea name="" id="question" cols="30" rows="10"></textarea>
+
+    <button type="submit">Đăng ký</button>
+
+    <!-- <input type="button" value="Đăng ký"> -->
+    <!-- 
+      Khi sử dụng form nên sử dụng method="POST" và các trường nhập dữ liệu cần có thuộc tính "name"
+     -->
+  </form>
+  <!-- <script>
+    const registerForm = document.getElementById("registerForm")
+    registerForm.addEventListener("submit", function(event) {
+      event.preventDefault()
+    })
+  </script> -->
+  
+</body>
+</html>

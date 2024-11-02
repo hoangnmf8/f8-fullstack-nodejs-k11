@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./ex01.css" />
+		<style>
+			/* h2 {
+				font-style: italic;
+				font-weight: 900;
+			} */
+
+			div > p {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="background-color: rgb(194, 111, 10); color: blue">CSS = Cascading Style Sheet</h1>
+		<h2>Các cách đưa CSS vào wessite</h2>
+		<ol>
+			<li>Cách 1: Inline - viết vào thuộc tính style trong thẻ mở của html</li>
+			<li>Cách 2: Internal - viết trong cặp thẻ style ở phần head</li>
+			<li>Cách 3: External - viết vào file .css và nhúng vào tài liệu html thông qua thẻ link:css</li>
+		</ol>
+		<div>
+			<p style="color: green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, obcaecati!</p>
+		</div>
+
+		<h2>Độ ưu tiên 3 cách viết CSS</h2>
+		<ol>
+			<li>
+				Inline có độ ưu tiên cao nhất Internal và External có độ ưu tiên ngang nhau, giá trị viết sau được xếp chồng lên
+				giá trị viết trước
+			</li>
+		</ol>
+
+		<section>
+			<div>
+				<div>
+					<h1>Tieu de</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit inventore magni suscipit repellendus amet,
+						expedita voluptatibus ipsam quae sequi libero!
+					</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, vero?</p>
+				</div>
+			</div>
+		</section>
+
+		<h2>user agent stylesheet</h2>
+	</body>
+</html>

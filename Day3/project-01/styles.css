@@ -53,8 +53,19 @@ li {
 	padding: 0;
 }
 
+li {
+	height: 32px;
+}
+
 .preview-icon {
 	font-size: 32px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+li span {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .description {
@@ -67,3 +78,7 @@ button {
 	border-radius: 2px;
 	padding: 10px;
 }
+
+/* span {
+	line-height: 32px;
+} */

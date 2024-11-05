@@ -1,5 +1,11 @@
+* {
+	/* universal selector */
+	box-sizing: border-box;
+}
+
 html {
 	font-family: "Poppins", sans-serif;
+	font-size: 16px;
 }
 
 body {
@@ -11,13 +17,11 @@ body {
 }
 
 .user-card {
-	width: 562px;
-	/* border: 1px solid #aaa; */
+	width: 560px;
 	padding: 50px;
 	margin: 100px auto 0;
 	background-color: white;
 	border-radius: 12px;
-	border: 2px solid red;
 }
 
 .avatar,
@@ -47,15 +51,13 @@ body {
 	}
 }
 
-ul,
-li {
-	list-style-type: none;
+ul {
 	margin: 0;
 	padding: 0;
 }
 
 li {
-	height: 32px;
+	list-style-type: none;
 }
 
 .preview-icon {
@@ -71,7 +73,6 @@ li span {
 
 .description {
 	font-size: 18px;
-	margin-bottom: 28px;
 }
 
 button {

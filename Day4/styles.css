@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+.box-1 {
+	/* box-sizing: content-box; */
+	/* Default value: content-box */
+	width: 200px;
+	height: 200px;
+	background-color: gainsboro;
+	padding: 50px;
+	border: 10px solid red;
+}
+
+.box-2 {
+	width: 200px;
+	height: 200px;
+	background-color: gainsboro;
+	padding: 50px;
+	border: 10px solid red;
+}
+
+/* 
+Box-sizing: content-box: kích thược thật sự của phần tử (khối hộp) chiếm chỗ được tính như sau:
+width = width(content) + padding-left + padding-right + border-left + border-right
+height = width(content) + padding-top + padding-bottom + border-top + border-bottom
+
+Như vậy khi sử dụng box-sizing: content-box thì giá trị width, height được cài đặt chỉ là giá trị của content.
+*/
+
+.btn-register {
+	padding: 12px 24px 12px 24px;
+	border: 2px solid blue;
+	border-radius: 6px;
+	min-width: 60px;
+	width: 200px;
+	height: 60px;
+}

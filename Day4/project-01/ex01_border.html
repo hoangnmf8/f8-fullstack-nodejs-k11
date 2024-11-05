@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			.box {
+				background-color: chocolate;
+				width: 200px;
+				height: 400px;
+				border: 5px double blue;
+			}
+
+			.box-item {
+				width: 100px;
+				height: 100px;
+				background-color: aqua;
+			}
+
+			.box-item-1 {
+				border-width: 2px;
+				border-style: dotted;
+				border-color: red;
+			}
+
+			.box-item-2 {
+				border-top: 6px solid yellow;
+				border-right: 6px solid transparent;
+				border-bottom: 6px solid green;
+				border-left: 6px solid gray;
+			}
+
+			.box-item-3 {
+				border-top-width: 6px;
+				border-top-color: bisque;
+				border-top-style: dashed;
+			}
+
+			.triangle {
+				width: 0;
+				height: 0;
+				border-bottom: 10px solid rebeccapurple;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box-item box-item-1"></div>
+			<div class="box-item box-item-2"></div>
+			<div class="box-item box-item-3"></div>
+		</div>
+		<div class="triangle"></div>
+	</body>
+</html>

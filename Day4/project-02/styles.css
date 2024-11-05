@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+.sub-imgs {
+	width: 400px;
+}
+
+img {
+	width: 119px;
+	height: 97px;
+	border-radius: 24px;
+}

@@ -1,0 +1,70 @@
+/* Common: BEGIN */
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+.padding-left-right {
+  padding-left: 120px;
+  padding-right: 120xp;
+}
+
+/* Common: END */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 40px auto 100px;
+  background-color: orange;
+}
+
+header ul {
+  display: flex;
+  li {
+    margin: 0 5px;
+  }
+
+  a {
+    padding: 10px 20px;
+    background-color: green;
+  }
+}
+
+header .logo {
+  width: 20%;
+  font-size: 32px;
+}
+
+header nav {
+  width: 60%;
+}
+
+header button {
+  padding: 10px 28px;
+}

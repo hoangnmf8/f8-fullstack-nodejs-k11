@@ -30,10 +30,12 @@ button {
 
 .padding-left-right {
   padding-left: 120px;
-  padding-right: 120xp;
+  padding-right: 120px;
 }
 
 /* Common: END */
+
+/* Header: BEGIN */
 
 header {
   display: flex;
@@ -68,3 +70,10 @@ header nav {
 header button {
   padding: 10px 28px;
 }
+
+/* Header: BEGIN */
+
+/* Banner: BEGIN */
+
+
+/* Banner: END */

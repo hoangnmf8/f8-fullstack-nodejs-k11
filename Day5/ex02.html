@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .box-1 {
+      background-color: orange;
+      margin-bottom: 100px;
+    }
+
+    .box-2 {
+      background-color: greenyellow;
+      margin-top: 50px;
+    }
+
+    .box-parent {
+      background-color: red;
+      width: 400px;
+      height: 200px;
+      /* border: 2px solid gray; */
+    }
+
+    .box-child {
+      width: 180px;
+      height: 180px;
+      background-color: orange;
+      /* margin-top: 100px; */
+      margin:0 auto;
+    }
+
+    .description {
+      background-color: blue;
+      color: white;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- <div class="box-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis explicabo non unde laudantium magni quos assumenda eius! Numquam pariatur esse totam provident quidem aut nostrum iusto asperiores tenetur! Odit?</div>
+  <div class="box-2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptatem.
+  </div> -->
+
+  <div class="box-parent">
+    <!-- <h2>title</h2> -->
+    <div class="box-child"></div>
+  </div>
+
+  <!-- 
+    Margin collapse là hiện tượng gộp margin:
+    1. 2 thẻ cạnh nhau có margin đổ cùng vào 1 vùng thì margin sẽ nhận giá trị lớn hơn.
+    2. Khi thẻ cha không có nội dung.
+    3. Khi thẻ cha không có border.
+   -->
+
+   <p class="description">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nesciunt?
+   </p>
+  
+</body>
+</html>

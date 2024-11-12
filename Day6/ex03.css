@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  /* background-color: rgb(255, 255, 255); */
+  background-color: rgba(255, 0, 255, 1);
+  /* red green blue */
+  /* hex: 0-9 a-f */
+  /* background-color: #f008; */
+  /* hex: 16*16 * 16*16 * 16*16 */
+    background: radial-gradient(green, red, yellow)
+}
+.btn{
+  padding: 12px 24px;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.btn:hover {
+  background-color: rgba(255, 0, 0, 1);
+}

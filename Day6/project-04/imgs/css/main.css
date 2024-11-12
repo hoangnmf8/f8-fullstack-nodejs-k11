@@ -1,0 +1,21 @@
+
+
+.about-item:nth-child(even) {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.about-item:first-child {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.about-item:last-child {
+  display: flex;
+  flex-direction: column-reverse;
+}
+/* 
+1. tag
+2. class
+3. id
+*/

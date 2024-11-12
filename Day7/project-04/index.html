@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.blog-inner {
+				display: flex;
+			}
+
+			.blog-item {
+				display: flex;
+				flex-direction: column;
+			}
+
+			/* Cach 1: */
+			.blog-item:nth-child(odd) {
+				/* flex-direction: column-reverse; */
+			}
+
+			/* Cach 2: */
+			.blog-item:nth-child(odd) .blog-content {
+				order: 2;
+			}
+
+			.blog-item:nth-child(odd) > img {
+				order: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="blog">
+			<h2>About Us</h2>
+			<div class="blog-inner">
+				<div class="blog-item">
+					<div class="blog-content">
+						<h3>Noi dung bai viet</h3>
+					</div>
+					<img src="./imgs/coffee-blog-01.jpg" alt="" />
+				</div>
+
+				<div class="blog-item">
+					<div class="blog-content">
+						<h3>Lorem ipsum dolor sit amet.</h3>
+					</div>
+					<img src="./imgs/coffee-blog-01.jpg" alt="" />
+				</div>
+
+				<div class="blog-item">
+					<div class="blog-content">
+						<h3>Noi dung bai viet</h3>
+					</div>
+					<img src="./imgs/coffee-blog-01.jpg" alt="" />
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

@@ -128,8 +128,9 @@ table {
 	border-spacing: 0;
 }
 
-/* Reset CSS */
+/* Customize Reset CSS */
 
 a {
 	text-decoration: none;
+	color: inherit;
 }

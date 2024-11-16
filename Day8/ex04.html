@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			.box {
+				display: inline-block;
+				position: static;
+				/* width: 200px; */
+				height: 200px;
+				border: 2px solid red;
+				background-color: orange;
+			}
+
+			.box-1 {
+				position: relative;
+				/* right: 20px; */
+				left: 0;
+				right: 0;
+				/* bottom: 20px; */
+				top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box box-1">Box 1</div>
+		<div class="box box-2">Box 2</div>
+		<div class="box box-3">Box 3</div>
+		<ol>
+			<li>
+				position relative vẫn đặt phần tử ở trên dòng chảy tự nhiên của tài liệu, tuy nhiên có thể điều chỉnh vị trị của
+				phần tử bằng các thuộc tính top, bottom, right, left
+			</li>
+			<li>position nhận giá trị khác static (default) thì sẽ có thể nằm đè lên phần tử position static</li>
+			<li>nếu top và bottom cùng được set và xung đột nhau thì ưu tiên top</li>
+			<li>nếu left right cùng được set và xung đột nhau thì ưu tiên left</li>
+		</ol>
+	</body>
+</html>

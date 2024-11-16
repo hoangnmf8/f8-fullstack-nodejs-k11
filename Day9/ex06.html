@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			footer {
+				padding: 100px 0;
+				width: 100%;
+				min-height: 400px;
+			}
+
+			.container {
+				padding-left: 120px;
+				padding-right: 120px;
+			}
+
+			.footer-inner {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				gap: 100px;
+			}
+
+			.box {
+				border: 2px solid red;
+				flex: 1 1 140px;
+				max-width: 100%;
+			}
+
+			.box:first-child,
+			.box:last-child {
+				flex-grow: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<footer>
+			<div class="container footer-inner">
+				<div class="box">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, recusandae itaque doloribus molestias
+					blanditiis aspernatur modi debitis architecto quo voluptatibus.
+				</div>
+				<div class="box">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, recusandae itaque doloribus molestias
+					blanditiis aspernatur modi debitis architecto quo voluptatibus.
+				</div>
+				<div class="box">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, recusandae itaque doloribus molestias
+					blanditiis aspernatur modi debitis architecto quo voluptatibus.
+				</div>
+				<div class="box">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, recusandae itaque doloribus molestias
+					blanditiis aspernatur modi debitis architecto quo voluptatibus.
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

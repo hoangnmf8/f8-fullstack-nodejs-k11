@@ -1,0 +1,69 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.pad-top-100 {
+	padding-top: 100px;
+}
+
+.container {
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+.margin-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn {
+	color: #fff;
+	font-size: 16px;
+	border-radius: 6px;
+	border: none;
+	transition: all ease-in-out 0.3s;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.btn--big {
+	padding: 24px 32px;
+	font-size: 18px;
+}
+
+.btn--medium {
+	padding: 18px 20px;
+	font-size: 16px;
+}
+
+.btn--small {
+	padding: 14px 20px;
+}
+
+.btn--aqua {
+	background-color: #31c3e0;
+}

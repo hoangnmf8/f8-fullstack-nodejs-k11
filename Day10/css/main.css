@@ -1,0 +1,27 @@
+p.description {
+	color: yellow;
+}
+
+p#desc {
+	color: violet !important;
+}
+
+p {
+	color: green !important;
+}
+
+* {
+	color: yellowgreen;
+}
+
+header {
+	p {
+		color: aqua;
+	}
+}
+
+section#hero {
+	p {
+		color: saddlebrown;
+	}
+}

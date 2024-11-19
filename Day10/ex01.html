@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			.btn {
+				padding: 8px 16px;
+				border-radius: 6px;
+				transition: background-color ease-in-out 1s;
+			}
+
+			.btn:hover {
+				background-color: blue;
+			}
+
+			.btn:active {
+				background-color: red;
+			}
+
+			input:focus {
+				border: 1px solid blue;
+				box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.2);
+			}
+			ul > li:first-child {
+				color: red;
+			}
+
+			ul > li:last-child {
+				color: green;
+			}
+
+			ul > li:nth-child(3) {
+				color: blue;
+			}
+
+			ul > li:nth-child(odd) {
+				background-color: aqua;
+			}
+
+			table,
+			th,
+			td {
+				border: 1px solid #bbb;
+				border-collapse: collapse;
+			}
+
+			th {
+				text-align: center;
+			}
+			tbody tr:nth-child(odd) {
+				background-color: #ddd;
+			}
+
+			.box > p:nth-of-type(odd) {
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="btn">Click me</button>
+		<input type="text" placeholder="email..." />
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+		</ul>
+
+		<table>
+			<thead>
+				<tr>
+					<th>STT</th>
+					<th>Ho va ten</th>
+					<th>Ngay sinh</th>
+					<th>Diem so</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quae!</td>
+					<td>4</td>
+				</tr>
+
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<input type="checkbox" />
+		<input type="checkbox" checked />
+		<div class="box">
+			<h2>Tieu de</h2>
+			<p>Lorem ipsum dolor sit.</p>
+			<div>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, ut!</p>
+			</div>
+			<p>Lorem ipsum dolor sit.</p>
+			<p>Lorem ipsum dolor sit.</p>
+			<p>Lorem ipsum dolor sit.</p>
+			<p>Lorem ipsum dolor sit.</p>
+		</div>
+	</body>
+</html>

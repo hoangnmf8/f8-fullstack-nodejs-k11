@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			h1 {
+				text-align: center;
+				position: relative;
+			}
+
+			h1::before {
+				content: "";
+
+				position: absolute;
+				bottom: -12px;
+				left: 30%;
+				right: 30%;
+				border-bottom: 2px solid #bbb;
+			}
+
+			h1::after {
+				content: "";
+				position: absolute;
+				bottom: -12px;
+				left: 12%;
+				right: 12%;
+				/* margin: 0 auto; */
+				border-bottom: 2px dashed #bbb;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Về chúng tôi</h1>
+	</body>
+</html>

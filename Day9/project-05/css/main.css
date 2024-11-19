@@ -18,6 +18,9 @@ header {
 		gap: 42px;
 		a:hover {
 			font-weight: 600;
+			&::after {
+				content: "";
+			}
 		}
 	}
 }

@@ -10,24 +10,25 @@
 			}
 			body {
 				margin: 0;
+				font-size: 32px;
 			}
 
 			.container {
 				width: 1170px;
 				max-width: 100%;
-				margin-left: auto;
-				margin-right: auto;
+				margin: 20px auto;
 				display: grid;
 				grid-template-areas:
 					"header header header"
-					"left-content right-content right-content"
+					"left-content main-content right-content"
+					"left-content sub-content right-content"
 					"footer footer footer";
-				grid-auto-rows: 100px minmax(calc(100vh - 160px), 1fr) 60px;
+				grid-auto-rows: 100px minmax(calc(100vh - 300px), 1fr) 60px;
 			}
 
 			.grid-item {
 				border: 1px dashed blue;
-				padding: 32px;
+				padding: 12px;
 			}
 
 			header {
@@ -42,19 +43,12 @@
 				grid-area: right-content;
 			}
 
-			.products-list {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 32px;
-				justify-content: flex-start;
-				align-items: center;
+			.main-content {
+				grid-area: main-content;
 			}
 
-			.product-item {
-				border: 1px solid red;
-				flex-shrink: 1;
-				flex-grow: 1;
-				flex-basis: 200px;
+			.sub-content {
+				grid-area: sub-content;
 			}
 
 			/* .product-item:last-child {
@@ -70,18 +64,10 @@
 		<div class="container">
 			<header class="grid-item">Header</header>
 			<div class="left-content grid-item">Left content</div>
-			<div class="right-content grid-item">
-				<h2>Danh sach san pham</h2>
-				<div class="products-list">
-					<div class="product-item">item 1</div>
-					<div class="product-item">item 1</div>
-					<div class="product-item">item 1</div>
-					<div class="product-item">item 1</div>
-					<div class="product-item">item 1</div>
-					<div class="product-item">item 1</div>
-					<div class="product-item">item 1</div>
-				</div>
-			</div>
+			<div class="main-content grid-item">Main content</div>
+			<div class="sub-content grid-item">Sub content</div>
+			<div class="right-content grid-item">Right content</div>
+
 			<footer class="grid-item">Footer</footer>
 		</div>
 	</body>

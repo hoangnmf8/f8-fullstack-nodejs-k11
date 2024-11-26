@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.container {
+				position: relative;
+				width: 300px;
+				height: 200px;
+			}
+			.container__inner {
+				padding: 24px;
+				width: 300px;
+				height: 200px;
+				border: 2px solid red;
+				transition: all ease-in-out 0.3s;
+			}
+
+			.container__inner:hover {
+				transform: skew(15deg);
+			}
+
+			/* .container:hover item {
+				transform: skew(-15deg);
+			} */
+
+			.item {
+				border: 1px solid blue;
+				width: calc(300px - 48px);
+				position: absolute;
+				top: 24px;
+				left: 24px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="container__inner"></div>
+			<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, molestiae.</div>
+		</div>
+	</body>
+</html>

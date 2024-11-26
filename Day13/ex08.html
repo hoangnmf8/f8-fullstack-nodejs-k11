@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<style>
+			.box {
+				width: 100px;
+				height: 100px;
+				background-color: #3498db;
+				position: absolute;
+				animation: slideIn 3s ease-in-out infinite alternate;
+			}
+
+			.box-1 {
+				width: 100px;
+				height: 100px;
+				background-color: #3498db;
+				position: absolute;
+			}
+
+			@keyframes slideIn {
+				0% {
+					transform: translateX(-100%) scale(1);
+					background-color: #3498db;
+				}
+				50% {
+					transform: translateX(50%) scale(1.5);
+					background-color: #e74c3c;
+				}
+				100% {
+					transform: translateX(100%) scale(1);
+					background-color: #2ecc71;
+				}
+			}
+
+			div {
+				animation-name: slideIn;
+				/* tên hoạt ảnh được áp dụng */
+				animation-duration: 1s;
+				/* thời gian áp dụng cho 1 vòng lặp */
+				animation-timing-function: ease;
+				/* kiểu chuyển động của hoạt ảnh */
+				animation-delay: 1s;
+				/* độ trễ trước khi hoạt ảnh bắt đầu */
+				animation-iteration-count: infinite;
+				/* số lần lặp lại hoạt ảnh, giá trị có thể là số nguyên hoặc infinite là không dừng lại */
+				animation-direction: alternate;
+				/* hướng lặp lại của hoạt ảnh: normal - chạy từ đầu đến cuối, reverse - chạy ngược, alternate - chạy từ đầu đến cuối rồi ngược lại, alternate-reverse - chạy từ cuối lên đầu rồi lại ngược lại */
+				animation-fill-mode: forwards;
+				/* xác định trạng thái cuối cùng của hoạt ảnh (none, forwards, backwards, both) */
+				animation-play-state: running;
+				/* điều khiển trạng thái hoạt động của hoạt ảnh, mặc định là running, khi muốn dừng lại đưa giá trị paused */
+				animation: slideIn 2s ease-in-out 1s infinite alternate;
+				/* cú pháp rút gọn của animation, trong đó chỉ */
+			}
+		</style>
+
+		<div class="box"></div>
+		<div class="box-1"></div>
+	</body>
+</html>

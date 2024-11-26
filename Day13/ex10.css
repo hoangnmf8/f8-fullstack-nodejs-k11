@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 300px;
+	height: 100px;
+	border: 2px solid red;
+	position: relative;
+}
+
+.arrow {
+	padding: 2px;
+	font-size: 20px;
+	position: absolute;
+	animation: arrow 5s linear infinite;
+}
+
+@keyframes arrow {
+	0% {
+		top: 0;
+		left: 0;
+		transform: translate(-50%, -50%);
+	}
+
+	25% {
+		top: 0;
+		right: 0;
+		left: unset;
+		transform: translate(-50%, -50%);
+	}
+
+	75% {
+		top: unset;
+		right: 0;
+		left: unset;
+		bottom: 0;
+		transform: translate(-50%, -50%);
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+		transform: translate(-50%, -50%);
+	}
+}

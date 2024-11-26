@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				margin: 0;
+			}
+			.sale {
+				padding: 12px 0;
+				background-color: #000;
+				color: #fff;
+				overflow: hidden;
+			}
+
+			.sale-content {
+				white-space: nowrap;
+				animation: marquee 4s linear 0s infinite;
+			}
+
+			@keyframes scroll-text {
+				from {
+					transform: translateX(100%);
+				}
+				to {
+					transform: translateX(-200%);
+				}
+
+				/* 0% {
+					transform: translateX(100%);
+				}
+				50% {
+					transform: translateX(0%);
+				}
+				100% {
+					transform: translateX(-100%);
+				} */
+			}
+
+			@keyframes marquee {
+				0% {
+					transform: translate(100%, 0);
+				}
+
+				100% {
+					transform: translate(-100%, 0);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sale">
+			<p class="sale-content">
+				Giảm giá đồng loạt từ 50K đến 200K các sản phẩm thu đông! Tưng bừng khai trương abc....
+			</p>
+		</div>
+	</body>
+</html>

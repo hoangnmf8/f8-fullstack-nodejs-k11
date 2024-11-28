@@ -3,44 +3,72 @@
 }
 
 .container {
-	width: 300px;
-	height: 100px;
 	border: 2px solid red;
+	height: 300px;
+	width: 300px;
 	position: relative;
 }
 
 .arrow {
-	padding: 2px;
-	font-size: 20px;
+	font-size: 18px;
 	position: absolute;
-	animation: arrow 5s linear infinite;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%) rotate(0);
+	animation: move-arrow 8s linear 0s infinite;
 }
 
-@keyframes arrow {
+@keyframes move-arrow {
 	0% {
 		top: 0;
 		left: 0;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%) rotate(0);
+	}
+	24% {
+		top: 0;
+		left: 100%;
+		transform: translate(-50%, -50%) rotate(0);
 	}
 
 	25% {
 		top: 0;
-		right: 0;
-		left: unset;
-		transform: translate(-50%, -50%);
+		left: 100%;
+		transform: translate(-50%, -50%) rotate(90deg);
+	}
+
+	49% {
+		top: 100%;
+		left: 100%;
+		transform: translate(-50%, -50%) rotate(90deg);
+	}
+
+	50% {
+		top: 100%;
+		left: 100%;
+		transform: translate(-50%, -50%) rotate(180deg);
+	}
+
+	74% {
+		top: 100%;
+		left: 0;
+		transform: translate(-50%, -50%) rotate(180deg);
 	}
 
 	75% {
-		top: unset;
-		right: 0;
-		left: unset;
-		bottom: 0;
-		transform: translate(-50%, -50%);
+		top: 100%;
+		left: 0;
+		transform: translate(-50%, -50%) rotate(270deg);
+	}
+
+	99% {
+		top: 0;
+		left: 0;
+		transform: translate(-50%, -50%) rotate(270deg);
 	}
 
 	100% {
 		top: 0;
 		left: 0;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%) rotate(360deg);
 	}
 }

@@ -11,7 +11,7 @@ fw: font-weight
 :root {
 	--ff-primary: "Poppins", serif;
 	--ff-secondary: "Sen", serif;
-	--primary-color: aqua;
+	--primary-color: #ff7b29;
 	--secondary-color: #31c3e0;
 	--fs: 1.6rem;
 	--fw: 400;
@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-	width: 1170px;
+	width: 1140px;
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -135,8 +135,9 @@ header {
 
 	h1 {
 		text-align: center;
-		padding: 140px 0;
-		font-size: 62px;
+		padding-top: 140px;
+		padding-bottom: 140px;
+		font-size: 64px;
 		font-family: "Poppins", serif;
 		color: #2d3134;
 		font-weight: 700;
@@ -265,10 +266,12 @@ header {
 
 .footer__top {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: stretch;
 	gap: 40px;
 	margin-bottom: 40px;
+	min-width: 300px;
 
 	h5 {
 		color: #020000;
@@ -297,7 +300,7 @@ header {
 	}
 }
 
-.footer_bottom {
+.footer__bottom {
 	margin-top: 40px;
 	padding-bottom: 35px;
 	.nav__inner {

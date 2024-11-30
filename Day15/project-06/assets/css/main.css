@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+.container {
+	width: 1140px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header,
+footer {
+	padding: 40px 0;
+	background-color: #000;
+	color: #fff;
+}

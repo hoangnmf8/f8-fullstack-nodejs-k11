@@ -8,6 +8,11 @@ ol {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
 li {
 	list-style-type: none;
 }
@@ -38,7 +43,7 @@ header {
 }
 
 .main-menu {
-	column-gap: 12px;
+	column-gap: 48px;
 	.menu-item {
 		position: relative;
 	}
@@ -47,10 +52,26 @@ header {
 		display: block;
 	}
 
+	.menu-item:hover::after {
+		content: "";
+		height: 26px;
+		width: 160px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+	}
+
 	.menu-secondary {
 		position: absolute;
-		bottom: 50%;
+		top: calc(100% + 24px);
 		left: 0;
 		display: none;
+		width: 160px;
+		padding: 12px;
+		background-color: #000;
+	}
+
+	.menu-item:last-child():hover .menu-secondary {
+		right: 0;
 	}
 }

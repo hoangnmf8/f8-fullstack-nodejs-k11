@@ -31,8 +31,38 @@ gx-4 {
 }
 
 .g-5,
-gx-5 {
-	--gutter-x: 3rem;
+gy-5 {
+	--gutter-y: 3rem;
+}
+
+.g-0,
+gy-0 {
+	--gutter-y: 0;
+}
+
+.g-1,
+gy-1 {
+	--gutter-y: 0.25rem;
+}
+
+.g-2,
+gy-2 {
+	--gutter-y: 0.5rem;
+}
+
+.g-3,
+gy-3 {
+	--gutter-y: 1rem;
+}
+
+.g-4,
+gy-4 {
+	--gutter-y: 1.5rem;
+}
+
+.g-5,
+gy-5 {
+	--gutter-y: 3rem;
 }
 
 .text-center {

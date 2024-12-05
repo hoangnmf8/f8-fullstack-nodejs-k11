@@ -1,2 +1,23 @@
 // base
 @import "./base/reset";
+
+// utils
+@import "./utils/variables";
+
+//vendor
+@import "./vendor/bootstrap";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+
+// components
+@import "./components/button";
+
+// pages
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/services";
+
+// themes
+@import "./themes/theme1";

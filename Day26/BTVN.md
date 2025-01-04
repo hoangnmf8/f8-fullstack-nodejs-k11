@@ -10,7 +10,7 @@ Năm 2015:ECMAScript 6 (ES6) ra đời,là phiên bản lớn nhất của ECMAS
 Năm 2016 - nay:Các phiên bản ECMAScript mới được ra mắt liên tục,với nhiều cải tiến và tính năng mới.Cho đến nay javaScript đã trở thành một trong số những ngôn ngữ được ưa chuộng và sử dụng nhiều nhất thế giới.`;
 ```
 
-### Viết hàm printHighlight(content, keyword) in ra nội dung nhận vào content bất kỳ và tô đậm tất cả keyword tìm thấy (không phân biệt hoa thường).
+### Viết hàm `printHighlight(content, keyword)` in ra nội dung nhận vào `content` bất kỳ và tô đậm tất cả `keyword` tìm thấy (không phân biệt hoa thường).
 
 Ví dụ:
 

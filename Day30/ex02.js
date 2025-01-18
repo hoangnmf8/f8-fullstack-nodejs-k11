@@ -1,44 +1,19 @@
-// let ulElement = document.getElementsByTagName("ul")[0];
-// ulElement.className = "list";
-
-// let anchorElement = document.getElementsByTagName("a")[0];
-// anchorElement.href = "https://google.com";
-// anchorElement.innerText = "Trang chu google";
-
-const dataMenu = [
-	{ id: 1, name: "Trang chủ", slug: "/" },
-	{ id: 2, name: "Sản phẩm", slug: "/san-pham" },
-	{ id: 3, name: "Về chúng tôi", slug: "/ve-chung-toi" },
-	{ id: 4, name: "Phụ kiện", slug: "/phu-kien", parentId: 2 },
+const arr1 = [
+	{ id: 1, name: "Hoang" },
+	{ id: 3, name: "Dung" },
+	{ id: 2, name: "Hien" },
 ];
 
 /**
- * Bước 1:
- * - Lấy ulElement đầu tiên trong header ra.
- *
- * Bước 2:
- * - Duyệt qua từng phần tử của mảng, thêm li, a, href, textnode.
- *
- * Bước 3: Kiểm tra parentId:
- * - Không có: thêm phần tử vào ulElement
- * - Có:
- *  - Kiểm tra xem có ulElement trong danh mục cha chưa? -> tạo.
- *  - Thêm danh mục con vào danh mục cha.
+ * Hiển thị danh sách người dùng dựa trên data arr1 với ol, li theo đúng thứ tự (thứ tự hiển thị dựa vào id)
  *
  */
 
-// for loop
-for (let i = 0; i < 100; i++) {
-	console.log(i);
-}
-
-// đệ quy
-function count(i) {
-	if (i >= 100) {
-		return;
-	}
-	console.log(i);
-	count(++i);
-}
-
-count(0);
+/**
+ * Bước 1: Tạo ra phần tử ol: createElement
+ * Bước 2: Sort mảng
+ * Bước 3: Tạo ra vòng lặp, qua mỗi lần lặp thì:
+ *  - Tạo ra phần tử li,
+ *  - Thêm nội dung cho phần tử li,
+ *  - Gắn li vào li
+ */

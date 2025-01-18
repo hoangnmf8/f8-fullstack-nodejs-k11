@@ -1,10 +1,19 @@
-let ulElement = document.getElementsByTagName("ul")[0];
-ulElement.className = "list";
+// Call API
+const products = [
+	{ id: 1, title: "Iphone 16 pro max", price: 2000, quantity: 2 },
+	{ id: 2, title: "Tivi Xiaomi 75inch 4K", price: 4000, quantity: 1 },
+	{ id: 3, title: "Tai nghe khong day airpod 2 pro", price: 400, quantity: 4 },
+];
 
-let anchorElement = document.getElementsByTagName("a")[0];
-anchorElement.href = "https://google.com";
-anchorElement.innerText = "Trang chu google";
+/**
+ * Xây dựng giao diện dạng bảng sản phẩm dựa trên data products phía trên.
+ * - Mỗi sản phẩm có thêm thông tin  tổng tiền theo từng sản phẩm.
+ * - Dòng cuối cùng của bảng hiển thị tổng tiền của đơn hàng.
+ * - Được phép dùng innerHTML
+ * - Lưu ý: Không được tạo bảng sẵn bằng HTML, xây dựng toàn bộ bằng JavaScript.
+ */
 
-anchorElement.setAttribute("data-id", "7");
-// anchorElement.getAttribute("data-id");
-console.log(anchorElement.attributes);
+/**
+ * Bước 1: Tạo content từ products
+ * Bước 2: Gắn content vào table và đưa vào document.body
+ */

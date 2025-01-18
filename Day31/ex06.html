@@ -4,10 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<style>
+			.d-none {
+				display: none;
+			}
+		</style>
 	</head>
 	<body>
-		<button onclick="toggleForm()"><h2>Login/Register</h2></button>
-		<form id="registerForm">
+		<button onclick="toggleForm()"><h1>Login</h1></button>
+		<form id="registerForm" class="d-none">
 			<div class="form-group">
 				<label for="">Username</label>
 				<input type="text" />
@@ -46,6 +51,28 @@
 		</form>
 		<script>
 			// An nut thay doi man hinh dang ky/nhap
+
+			// Cách 1: Sử dụng classList.toggle
+			let registerForm = document.getElementById("registerForm");
+			let loginForm = document.getElementById("loginForm");
+			let h1Element = document.getElementsByTagName("h1")[0];
+
+			function toggleForm() {
+				registerForm.classList.toggle("d-none");
+				loginForm.classList.toggle("d-none");
+				registerForm.classList.contains("d-none")
+					? (h1Element.innerText = "Register")
+					: (h1Element.innerText = "Login");
+			}
+			// Cách 2: Lấy formNode, thao tác thông qua style
+
+			console.log({ document });
+
+			document.open();
+
+			document.write("Hello, world!");
+			document.write("Hello, world  2!");
+			document.close();
 		</script>
 	</body>
 </html>

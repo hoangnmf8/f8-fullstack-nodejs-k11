@@ -1,90 +1,61 @@
-// console.log({ document });
+// const obj1 = {
+// 	email: "hoang@gmail.com",
+// 	password: "123456",
+// 	address: "HN",
+// 	age: undefined,
+// 	greet() {
+// 		console.log("Xin chao");
+// 	},
+// };
 
-/**
- * Element node
- * Atribute node
- * Text node
- */
+// let myJSON = JSON.stringify(obj1);
+// console.log(myJSON);
+// console.log(JSON.parse(myJSON));
 
-const myDocument = {
-	html: {
-		head: {
-			title: {
-				textNode: "Title trang web",
-			},
-		},
+// '{"email":"hoang@gmail.com","password":"123456","address":"HN"}'
 
-		body: {
-			h1: {
-				textNode: "DOM",
-			},
-		},
+// const arr1 = [1, 2, 3, 4, 5];
+// console.log(JSON.stringify(arr1));
+// console.log(JSON.parse(JSON.stringify(arr1)));
+// console.log(JSON.stringify([]));
+// console.log(JSON.stringify(123));
+// console.log(JSON.stringify(null));
+// console.log(JSON.stringify(NaN));
+// console.log(JSON.stringify(true));
+// console.log(
+// 	JSON.stringify(function sum(a, b) {
+// 		return a + b;
+// 	})
+// );
+
+// console.log(JSON.stringify(undefined));
+// console.log(JSON.stringify(Infinity));
+// console.log(JSON.stringify(-Infinity));
+// console.log(JSON.stringify(Math.random()));
+
+// console.log(a);
+const a = 10;
+export const b = 20;
+export const infor = {
+	fullname: "Nguyen Minh Hoang",
+	greet() {
+		console.log("hello");
 	},
 };
 
-// console.log(myDocument);
+// export default function sum(a, b) {
+// 	return a + b;
+// }
+export default sum;
 
-const h1ElementC1 = document.getElementsByTagName("h1")[0];
-const h1ElementC2 = document.getElementById("title-page");
-const h1ElementC3 = document.getElementsByClassName("title")[0];
-const h1ElementC4 = document.querySelector("h1#title-page.title");
-const h1ElementC5 = document.querySelectorAll("h1#title-page.title")[0];
-
-console.log({ h1ElementC1 });
-console.log({ h1ElementC2 });
-console.log(h1ElementC3);
-console.log(h1ElementC4);
-console.log(h1ElementC5);
-
-const olElement = document.getElementsByTagName("ol")[0];
-
-console.log({ olElement });
-
-console.log(olElement.childNodes);
-console.log(olElement.children);
-
-const liElementList = olElement.children;
-
-for (let i = 0; i < liElementList.length; i++) {
-	console.log(liElementList[i]);
+function sum(a, b) {
+	return a + b;
 }
 
-for (value of liElementList) {
-	console.log(value);
-}
+// export default const sum = (a, b) => {
+// 	return a + b;
+// };
 
-// liElementList.forEach((item) => console.log(item));
+// export default infor.greet;
 
-const liElementListC2 = document.getElementsByTagName("li");
-
-// liElementListC2.forEach((item) => {
-// 	console.log(item);
-// });
-
-const liElementListC3 = document.querySelectorAll("li");
-console.log(liElementListC3);
-
-for (let i = 0; i < liElementListC3.length; i++) {
-	console.log(liElementListC3[i]);
-}
-
-for (value of liElementListC3) {
-	console.log(value);
-}
-
-liElementListC3.forEach((item) => {
-	console.log(item);
-});
-
-/**
- * createElement
- * appendChild
- * removeChild
- */
-
-const liElementCustom = document.createElement("li");
-liElementCustom.innerText = "Noi dung the li custom";
-
-olElement.appendChild(liElementCustom);
-// olElement.removeChild(liElementCustom);
-olElement.replaceChild();
+// export { sum };

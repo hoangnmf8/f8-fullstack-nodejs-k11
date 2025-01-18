@@ -10,7 +10,7 @@ const products = [
  * - Mỗi sản phẩm có thêm thông tin  tổng tiền theo từng sản phẩm.
  * - Dòng cuối cùng của bảng hiển thị tổng tiền của đơn hàng.
  * - Được phép dùng innerHTML
- * - Lưu ý: Không được tạo bảng sẵn bằng HTML, xây dựng toàn bộ bằng JavaScript
+ * - Lưu ý: Không được tạo bảng sẵn bằng HTML, xây dựng toàn bộ bằng JavaScript.
  */
 
 /**

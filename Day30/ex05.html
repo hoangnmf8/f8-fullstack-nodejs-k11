@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.d-none {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<button onclick="toogleContent()">Show/Hide</button>
+		<p class="content class-1 class-2 class-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, alias!</p>
+		<script>
+			let contentElement = document.getElementsByClassName("content")[0];
+			function toogleContent() {
+				// Kiểm tra xem content có class d-none, nếu chưa có thì gắn vào, có rồi -> gỡ ra
+				// Cach 1:
+				// contentElement.classList.contains("d-none")
+				// 	? contentElement.classList.remove("d-none")
+				// 	: contentElement.classList.add("d-none");
+
+				// Cach 2:
+				contentElement.classList.toggle("d-none");
+			}
+			console.log(contentElement.classList);
+			console.log(contentElement.classList.length);
+			console.log(contentElement.classList[0]);
+		</script>
+	</body>
+</html>

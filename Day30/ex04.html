@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Tieu de chinh</h1>
+		<h2 style="background-color: red">Tieu de cap 2</h2>
+		<script>
+			h1Element = document.getElementsByTagName("h1")[0];
+			h1Element.style.backgroundColor = "red";
+			h2Element = document.getElementsByTagName("h2")[0];
+			console.log(h2Element);
+			h2Element.style.cssText = `background-color: red; font-size: 24px; border: 2px solid blue`;
+			h2Element.style.borderRadius = "10px";
+		</script>
+	</body>
+</html>

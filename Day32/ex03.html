@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form id="register-form">
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" placeholder="Email" name="email" required />
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" placeholder="Password" name="password" required />
+			</div>
+			<button type="submit">Submit</button>
+		</form>
+		<script>
+			const registerForm = document.getElementById("register-form");
+
+			registerForm.addEventListener("submit", function (event) {
+				event.preventDefault();
+
+				// Cách 1: formData
+				const formData = new FormData(registerForm);
+				console.log({ formData });
+				const datas = Object.fromEntries(formData);
+				console.log({ datas });
+
+				// Cách 2: Truy vấn value của từng Element node
+				const valueEmail = document.getElementsByName("email")[0].value;
+				const valuePassword = document.getElementsByName("password")[0].value;
+				console.log({ valueEmail, valuePassword });
+
+				// validation
+
+				//
+				window.localStorage.setItem("userInfor", JSON.stringify({ valueEmail, valuePassword }));
+				window.sessionStorage.setItem("userInfor", JSON.stringify({ valueEmail, valuePassword }));
+				// localStorage.removeItem("userInfor")
+				// localStorage.clear()
+			});
+		</script>
+	</body>
+</html>

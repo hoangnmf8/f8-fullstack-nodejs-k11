@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Day 32</title>
+	</head>
+	<body>
+		<h1>Day 32</h1>
+		<button id="btn-01" onclick="console.log('hello')">Click Me</button>
+		<script>
+			const btn = document.getElementById("btn-01");
+			btn.onclick = () => console.log("xin chao");
+			btn.addEventListener("click", function () {
+				setTimeout(() => {
+					console.log("bonjour!");
+				}, 2000);
+			});
+			btn.addEventListener("click", function () {
+				console.log("tam biet!");
+			});
+		</script>
+	</body>
+</html>

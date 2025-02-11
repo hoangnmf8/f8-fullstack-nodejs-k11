@@ -47,11 +47,14 @@
 					headers: {
 						"Content-Type": "application/json",
 					},
-					method: "POST",
+					method: "POST", // POST, GET, PATCH, PUT, DELETE
 					body: JSON.stringify(userInfor),
 				})
 					.then((res) => res.json())
-					.then((data) => console.log(data))
+					.then((data) => {
+						// nếu data có dữ liệu accessToken thì là thành công -> thông báo thành công
+						// nếu data chỉ là chuỗi -> thông tin báo thất bại -> thông báo cho người dùng lỗi.
+					})
 					.catch((error) => {
 						console.log(error);
 					});

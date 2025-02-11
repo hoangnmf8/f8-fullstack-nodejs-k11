@@ -36,7 +36,7 @@
 
   - DELETE /tasks/:taskId
 
-- Lấy và hiển thị danh sách task của user hiện tại (khi user đã đăng nhập)
+- Lấy và hiển thị danh sách task của user hiện tại (khi user đã đăng nhập) (Gợi ý: nên sử dụng dạng bảng để hiển thị)
 
   - GET /tasks
 
@@ -45,3 +45,9 @@
 - title: string
 - status: string (todo, doing, done)
 - priority: number (1, 2, 3)
+
+## Tính năng bổ sung
+
+- Lọc task theo status (todo, doing, done) (Gợi ý sử dụng select box).
+- Sắp xếp task theo priority (1, 2, 3) tăng dần hoặc giảm dần.
+- Tìm kiếm task theo title (Gợi ý sử dụng input search)

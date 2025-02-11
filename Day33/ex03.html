@@ -42,6 +42,19 @@
 				const formData = new FormData(form);
 				const userInfor = Object.fromEntries(formData);
 				console.log(userInfor);
+
+				fetch("http://localhost:3000/register", {
+					headers: {
+						"Content-Type": "application/json",
+					},
+					method: "POST",
+					body: JSON.stringify(userInfor),
+				})
+					.then((res) => res.json())
+					.then((data) => console.log(data))
+					.catch((error) => {
+						console.log(error);
+					});
 			});
 		</script>
 	</body>

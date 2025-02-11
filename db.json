@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "price": 200
+    }
+  ],
+  "users": [
+    {
+      "email": "hoang@gmail.com",
+      "password": "$2a$10$uvLYAHa0JT8mN3Vb1pgq4.N/z4UIoLp5xvUR1iiaU307QzkJZqV7W",
+      "id": 1
+    }
+  ],
+  "categories": []
+}

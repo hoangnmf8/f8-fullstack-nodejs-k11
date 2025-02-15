@@ -16,6 +16,31 @@
       "email": "hoang@gmail.com",
       "password": "$2a$10$uvLYAHa0JT8mN3Vb1pgq4.N/z4UIoLp5xvUR1iiaU307QzkJZqV7W",
       "id": 1
+    },
+    {
+      "email": "cong@gmail.com",
+      "password": "$2a$10$YsCxn2izgDbzESBJ.S.YdOhktqzi1e9NLV9ihlQeUNlAC7ZZLH/Sq",
+      "id": 2
+    },
+    {
+      "email": "hoang001@gmail.com",
+      "password": "$2a$10$ftd204mlOSunE5/CvtBg2uLMeSr.5KghPLLaBMUSkjYV2a2tLEq0e",
+      "id": 3
+    },
+    {
+      "email": "hoang002@gmail.com",
+      "password": "$2a$10$Fwd248VJfB7.rmjBSlGzy.ULxN0wuproUk6b.2n0ImQh1fG.jxlCa",
+      "id": 4
+    },
+    {
+      "email": "hoang003@gmail.com",
+      "password": "$2a$10$DdRv/rhuePJr1BVskV56OO6Tp7qhqvO75TU5zvQgH2jLUGIYhsP1q",
+      "id": 5
+    },
+    {
+      "email": "hoang04@gmail.com",
+      "password": "$2a$10$/.Xp1/fkoJe4XYhNGyae.eqmXAv6bcOCfyvuLSXDJWZQ/rPgcPSIy",
+      "id": 6
     }
   ],
   "categories": []

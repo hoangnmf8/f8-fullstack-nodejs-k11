@@ -1,21 +1,17 @@
 {
 	"name": "f8-k11",
-	"version": "1.0.0",
-	"description": "f8-k11",
-	"main": "index.js",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
 	"scripts": {
-		"start": "json-server --watch db.json --port 3000 -m ./node_modules/json-server-auth"
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
 	},
-	"keywords": [
-		"nodejs",
-		"f8",
-		"k11"
-	],
-	"author": "hoangnm",
-	"license": "MIT",
+	"devDependencies": {
+		"vite": "^5.2.0"
+	},
 	"dependencies": {
-		"json-server": "^0.17.4",
-		"json-server-auth": "^2.1.0",
-		"toastify-js": "^1.12.0"
+		"navigo": "^8.11.1"
 	}
 }
